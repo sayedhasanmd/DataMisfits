@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="ebay smoke">
+    <parameter name="url" value="https://www.ebay.com"></parameter>
+    <parameter name="browser" value="chrome"></parameter>
+    <parameter name="os" value="windows"></parameter>
+    <test name="tests">
+        <classes>
+            <class name="apps.ebay.LoginTest"></class>
+            <class name="apps.ebay.InvalidloginPage"></class>
+            <class name="apps.ebay.SearchbarPageTest"></class>
+            <class name="apps.ebay.HelpAndContactPageTest"></class>
+            <class name="apps.ebay.CustomerServiceForBuyingTest"></class>
+            <class name="apps.ebay.CustomerServiceForSellingTest"></class>
+            <class name="apps.ebay.CustomerServiceForShipingAndTrackingTest"></class>
+            <class name="apps.ebay.CustomerServiceForAccountTest"></class>
+
+            <class name="apps.ebay.HomePageTest"></class>
+            <class name="apps.ebay.MotorPageTest"></class>
+            <class name="apps.ebay.ElectronicsPageTest"></class>
+            <class name="apps.ebay.CollectiblesArtPageTest"></class>
+            <class name="apps.ebay.HomeAndGardenTest"></class>
+            <class name="apps.ebay.ClothingShoesPagesTest"></class>
+            <class name="apps.ebay.ToysPageTest"></class>
+        </classes>
+    </test>
+
+
+</suite>
